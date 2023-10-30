@@ -1,0 +1,9 @@
+{
+	"name": "pandiadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e166596c-6cc7-40e0-bf01-65294510b7d1",
+		"tenantId": "070de985-2782-45e1-9a94-7e0126676674"
+	}
+}
