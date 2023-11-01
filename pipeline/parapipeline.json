@@ -31,7 +31,21 @@
 				"inputs": [
 					{
 						"referenceName": "para_dataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_filesystem": {
+								"value": "@pipeline().parameters.pp_filesystem",
+								"type": "Expression"
+							},
+							"ds_directory": {
+								"value": "@pipeline().parameters.pp_directory",
+								"type": "Expression"
+							},
+							"ds_filename": {
+								"value": "@pipeline().parameters.pp_filename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
@@ -40,10 +54,13 @@
 			"pp_filesystem": {
 				"type": "string"
 			},
-			"pp_directory": {
+			"pp_directory_in": {
 				"type": "string"
 			},
 			"pp_filename": {
+				"type": "string"
+			},
+			"pp_directory_out": {
 				"type": "string"
 			}
 		},
