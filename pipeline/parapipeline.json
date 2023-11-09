@@ -202,20 +202,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "para_dataset",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_filesystem": {
-								"value": "@pipeline().parameters.pp_filename",
-								"type": "Expression"
-							},
-							"ds_directory": {
-								"value": "@pipeline().parameters.pp_directory_arch",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "delete",
+						"type": "DatasetReference"
 					},
-					"enableLogging": true,
+					"enableLogging": false,
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"recursive": true,
